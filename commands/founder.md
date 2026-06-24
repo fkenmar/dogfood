@@ -72,8 +72,9 @@ Then output the **full project doc** in this order:
 13. **90-day plan** — the next 3 concrete moves.
 14. **Critique log** — what each round flagged and how the doc changed. This proves it survived contact.
 
-Save it to `./<short-slug>-project-doc.md`, tell me the path, and offer to render a PDF. Keep every
-section grounded in *this* idea — generic startup advice is a failure, not a feature.
+Save it to `./<short-slug>-project-doc.md`, tell me the path, and offer to render a PDF. Open the saved
+doc with a one-line disclaimer that its legal and financial sections are AI-generated, not professional
+advice. Keep every section grounded in *this* idea — generic startup advice is a failure, not a feature.
 
 ## Phase 6 — Convene the specialist team
 With the doc solid on the business side, bring in the specialists to pressure-test and deepen their

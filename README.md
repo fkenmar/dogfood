@@ -1,12 +1,15 @@
-# Founder Studio
+# dogfood
 
-> An AI startup studio for Claude Code. Hand `/founder` a raw idea; a team of specialist agents
-> interrogates it, researches the market, tears it apart, and hands you back a validated,
-> execution-ready project doc — or an honest verdict to kill it before you waste months.
+> The AI co-founder honest enough to tell you to **kill your idea** — and show its work.
 
-Most AI "idea validators" are flattering hype machines. Founder Studio is built around the opposite
-instinct: **a plan has to survive a cold, adversarial critique before it ships.** The honesty is the
-whole point — if your idea is weak, it will tell you, and show its work.
+Most AI "idea validators" are flattering hype machines. **dogfood** is the opposite: hand `/founder` a
+raw idea and a team of specialist agents researches the market, drafts a plan through Y-Combinator's
+rules, then a cold adversarial critic with *no stake in the draft* returns `KILL IT` / `MAJOR REWORK` /
+`PROCEED WITH FIXES` — and loops critique↔revise until the plan survives. You leave with a validated,
+execution-ready project doc, or an honest verdict that saves you three months.
+
+The name is the method: we ran dogfood on itself. Verdict — **MAJOR REWORK**. The flaws it found are in
+[`examples/dogfood-self-run.md`](examples/dogfood-self-run.md), unedited, and they shaped this README.
 
 ## What you get
 
@@ -21,7 +24,7 @@ whole point — if your idea is weak, it will tell you, and show its work.
 6. **Convenes the specialist team** — validation, UX, technical, legal, finance, and growth each deepen
    their section.
 7. **Project manager** turns it all into a sequenced execution roadmap.
-8. **Pitch strategist** writes the investor narrative + deck outline.
+8. **Pitch strategist** writes the launch/investor narrative.
 
 The output ends with a **critique log** showing how the idea changed under fire.
 
@@ -41,14 +44,14 @@ Every specialist is also a standalone command — point it at any idea or doc on
 | `/financials` | `finance-lead` | Pricing, unit economics (CAC/LTV/payback), runway, default-alive math |
 | `/growth` | `growth-marketer` | First-100-users playbook, the channel to win first, launch, growth loop |
 | `/roadmap` | `project-manager` | Sequenced execution roadmap with acceptance checks and a cut list |
-| `/pitch` | `pitch-strategist` | Investor narrative + slide-by-slide deck outline |
+| `/pitch` | `pitch-strategist` | Launch/investor narrative + slide-by-slide outline |
 
 ## What it is — and isn't
 
 - **It is** a fast way to pressure-test an idea, expose the assumptions it rests on, and turn a vague
   notion into a concrete, sequenced plan.
 - **It is *not* a substitute for talking to real customers.** No agent can interview your market for
-  you. The studio *designs* the validation experiments — who to talk to, the questions, the cheapest
+  you. dogfood *designs* the validation experiments — who to talk to, the questions, the cheapest
   pre-build test — but you still have to go run them. A doc that survived an AI critique has survived
   contact with a language model, not with reality.
 
@@ -59,16 +62,16 @@ Requires [Claude Code](https://claude.com/claude-code).
 **As a plugin (recommended):**
 
 ```
-/plugin marketplace add fkenmar/founder-studio
-/plugin install founder-studio
+/plugin marketplace add fkenmar/dogfood
+/plugin install dogfood
 ```
 
 **Or manually** — copy the commands and agents into your config:
 
 ```bash
-git clone https://github.com/fkenmar/founder-studio
-cp -r founder-studio/commands/* ~/.claude/commands/
-cp -r founder-studio/agents/*   ~/.claude/agents/
+git clone https://github.com/fkenmar/dogfood
+cp -r dogfood/commands/* ~/.claude/commands/
+cp -r dogfood/agents/*   ~/.claude/agents/
 ```
 
 ## Usage
@@ -93,8 +96,15 @@ Or run any single specialist on its own:
 
 ## Example
 
-[`examples/founder-studio-self-review.md`](examples/founder-studio-self-review.md) — Founder Studio run
-on *itself*, including the critique that returned **MAJOR REWORK**.
+[`examples/dogfood-self-run.md`](examples/dogfood-self-run.md) — the full pipeline run on dogfood
+itself, including the critique that returned **MAJOR REWORK**.
+
+## Disclaimer
+
+dogfood's output is **AI-generated** and may be wrong. The legal (`/legal-review`), financial
+(`/financials`), and market (`/market-research`) sections are **not** legal, financial, investment, tax,
+or professional advice and create no professional relationship — treat everything as a starting point and
+verify with qualified professionals before relying on it. See [DISCLAIMER.md](DISCLAIMER.md).
 
 ## License
 

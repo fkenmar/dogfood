@@ -1,6 +1,6 @@
 {
-  "name": "founder-studio",
-  "id": "founder-studio",
+  "name": "dogfood",
+  "id": "dogfood",
   "owner": {
     "name": "fkenmar"
   },
@@ -10,7 +10,7 @@
   },
   "plugins": [
     {
-      "name": "founder-studio",
+      "name": "dogfood",
       "source": "./",
       "description": "A /founder command and a team of specialist agents (market research, customer discovery, brutal critique, UX, technical, legal, finance, growth, PM, pitch) that turn a raw idea into a validated, execution-ready project doc.",
       "version": "0.1.0",
