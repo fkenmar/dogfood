@@ -1,0 +1,24 @@
+{
+  "name": "founder-studio",
+  "id": "founder-studio",
+  "owner": {
+    "name": "fkenmar"
+  },
+  "metadata": {
+    "description": "An AI startup studio for Claude Code — turn a raw idea into a validated, critiqued, execution-ready project doc.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "founder-studio",
+      "source": "./",
+      "description": "A /founder command and a team of specialist agents (market research, customer discovery, brutal critique, UX, technical, legal, finance, growth, PM, pitch) that turn a raw idea into a validated, execution-ready project doc.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Kenmar Francisco"
+      },
+      "keywords": ["startup", "founder", "validation", "critique", "agents", "workflow"],
+      "category": "workflow"
+    }
+  ]
+}
